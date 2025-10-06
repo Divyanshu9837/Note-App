@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext , useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -42,6 +43,6 @@ const ContextProvider = ({children}) => {
   )
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const useAuth = () => useContext(authContext)
 export default ContextProvider
