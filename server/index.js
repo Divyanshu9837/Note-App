@@ -14,6 +14,10 @@ app.use(express.json())
 app.use('/api/auth',authRouter)
 app.use('/api/note',noteRouter)
 
+app.get('/',(req,res)=>{
+    return res.send("Hello World")
+})
+
 
 app.listen(5000,()=>{
     connectToMongoDB()
